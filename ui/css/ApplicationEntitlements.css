@@ -1,0 +1,302 @@
+.appEntitlements-root {
+    box-sizing: border-box;
+    padding: 10px 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+}
+
+.appEntitlements-toolbar {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-bottom: 8px;
+    gap: 8px;
+}
+
+#appEntitlementsSearch {
+    width: 260px;
+    padding: 6px 10px;
+    border: 1px solid #d0d5db;
+    border-radius: 4px 0 0 4px;
+    font-size: 12px;
+}
+
+.appEntitlements-total-count {
+    color: #666;
+    font-size: 12px;
+}
+
+#entitlementsTableWrapper {
+    border: 1px solid #e2e6ea;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.appEntitlements-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.appEntitlements-table thead th {
+    background: #ffffff;
+    text-align: left;
+    padding: 8px 10px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #333;
+    border-bottom: 2px solid #d8dce0;
+}
+
+.appEntitlements-table th[data-sort] {
+    cursor: pointer;
+}
+
+.appEntitlements-table th[data-sort]:hover {
+    background: #f4f6f8;
+}
+
+.appEntitlements-table td {
+    padding: 7px 10px;
+    font-size: 12.5px;
+    color: #333;
+    border-bottom: 1px solid #ececec;
+    word-break: break-word;
+}
+
+.appEntitlements-table tbody tr:nth-child(even) td {
+    background: #f7f8f9;
+}
+
+.appEntitlements-table tbody tr:hover td {
+    background: #eef4fa;
+}
+
+.appEntitlements-table th:nth-child(1), .appEntitlements-table td:nth-child(1) { width: 14%; }
+.appEntitlements-table th:nth-child(2), .appEntitlements-table td:nth-child(2) { width: 12%; }
+.appEntitlements-table th:nth-child(3), .appEntitlements-table td:nth-child(3) { width: 14%; }
+.appEntitlements-table th:nth-child(4), .appEntitlements-table td:nth-child(4) { width: 42%; }
+.appEntitlements-table th:nth-child(5), .appEntitlements-table td:nth-child(5) { width: 10%; }
+.appEntitlements-table th:nth-child(6), .appEntitlements-table td:nth-child(6) { width: 8%; }
+
+.appEntitlements-empty, .appEntitlements-error {
+    padding: 24px 16px;
+    text-align: center;
+    color: #8a9099;
+    font-size: 12.5px;
+}
+.appEntitlements-error { color: #c0392b; }
+
+.appEntitlements-pager {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 8px;
+    font-size: 12px;
+}
+.appEntitlements-pager button {
+    padding: 4px 12px;
+    border: 1px solid #d0d5db;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.appEntitlements-pager button:hover:not(:disabled) { background: #f4f6f8; }
+.appEntitlements-pager button:disabled { opacity: 0.45; cursor: default; }
+
+.appEntitlements-row {
+    cursor: pointer;
+}
+
+.appEntitlements-row td:first-child {
+    cursor: default;
+}
+
+.appEntitlements-row td:first-child a {
+    cursor: pointer;
+}
+
+.appEntitlements-search-group {
+    display: flex;
+    align-items: stretch;
+}
+
+#appEntitlementsSearch {
+    width: 240px;
+    padding: 6px 10px;
+    border: 1px solid #d0d5db;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 12px;
+}
+
+#appEntitlementsSearch:focus {
+    outline: none;
+    border-color: #4a90d9;
+}
+
+.appEntitlements-search-btn {
+    padding: 0 10px;
+    border: 1px solid #d0d5db;
+    border-radius: 0 4px 4px 0;
+    background: #f4f6f8;
+    color: #555;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.appEntitlements-search-btn:hover {
+    background: #e9ecef;
+}
+
+.appEntitlements-native-pager button:disabled { opacity: 0.4; cursor: default; }
+.appEntitlements-page-input { width: 30px; text-align: center; margin: 0 4px; }
+
+.appEntitlements-search-clear-btn {
+    padding: 0 8px;
+    border: 1px solid #d0d5db;
+    border-left: none;
+    border-right: none;
+    background: #fff;
+    color: #888;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.appEntitlements-search-clear-btn:hover {
+    color: #333;
+    background: #f4f6f8;
+}
+
+.appEntitlements-pager-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.appEntitlements-pager-controls button {
+    min-width: 26px;
+    padding: 4px 8px;
+    text-align: center;
+    height: 30px !important;
+    width: 40px !important;
+}
+
+.appEntitlements-page-input {
+    box-sizing: border-box;
+    width: 40px !important;
+    padding: 2px 3px !important;
+    text-align: center;
+    border: 1px solid #d0d5db;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.appEntitlements-page-input:focus {
+    outline: none;
+    border-color: #4a90d9;
+}
+
+.appEntitlements-page-text {
+    color: #555;
+}
+
+.appEntitlements-pager-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.appEntitlements-limit-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+select.appEntitlements-limit-select {
+    box-sizing: border-box;
+    padding: 2px 6px !important;
+    border: 1px solid #d0d5db;
+    border-radius: 3px;
+    font-size: 12px;
+    background: #ffffff;
+    cursor: pointer;
+    height: 30px !important;
+}
+
+select.appEntitlements-limit-select:focus {
+    outline: none;
+    border-color: #4a90d9;
+}
+
+.appEntitlements-refresh-btn {
+    padding: 4px 7px;
+    border: 1px solid #d0d5db;
+    border-radius: 4px;
+    background: #fff;
+    color: #555;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px !important;
+    width: 40px !important;
+}
+
+.appEntitlements-refresh-btn:hover {
+    background: #f4f6f8;
+}
+
+.appEntitlements-refresh-btn.spinning svg {
+    animation: appEntitlementsSpin 0.7s linear infinite;
+}
+
+@keyframes appEntitlementsSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.appEntitlements-loading-row td {
+    padding: 30px 16px !important;
+    text-align: center;
+    border-bottom: none !important;
+}
+
+.appEntitlements-loading-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #8a9099;
+    font-size: 12.5px;
+}
+
+.appEntitlements-spinner {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #d8dce0;
+    border-top-color: #4a90d9;
+    border-radius: 50%;
+    animation: appEntitlementsSpin 0.7s linear infinite;
+}
+
+/*
+.appEntitlements-attrtype-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 12px;
+}
+*/
+
+.appEntitlements-attrtype-select {
+    margin-left: 4px;
+}
